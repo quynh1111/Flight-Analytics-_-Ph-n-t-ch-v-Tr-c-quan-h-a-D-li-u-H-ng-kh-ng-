@@ -74,22 +74,6 @@ Ngrok sẽ tạo một link public:
 
 Truy cập đường link này để mở Dashboard hoặc test API.
 
----
-### 🔗 API Endpoints
-Phương thức	Endpoint	Mô tả
-GET	/api/airlines	Lấy danh sách tất cả hãng bay
-GET	/api/airlines/{code}	Lấy thông tin chi tiết cho một hãng
-POST	/api/airlines	Thêm mới một hãng bay
-PUT	/api/airlines/{code}	Cập nhật dữ liệu hãng bay
-DELETE	/api/airlines/{code}	Xóa hãng bay khỏi cơ sở dữ liệu
----
-### ⚠️ Lưu ý & Khắc phục lỗi thường gặp
-Lỗi	Nguyên nhân	Cách khắc phục
-ServerSelectionTimeoutError (MongoDB)	Sai URI hoặc chưa whitelist IP	Kiểm tra cấu hình MongoDB Atlas
-Ngrok tunnel expired	Token ngrok chưa add hoặc hết hạn	Chạy lại lệnh ngrok config add-authtoken
-ModuleNotFoundError	Thiếu thư viện	Cài đặt lại bằng requirements.txt
-Dữ liệu trống / null	Sai bước làm sạch dữ liệu	Kiểm tra lại notebook Databricks
----
 ### 🚀 Hướng phát triển tiếp theo
 Hỗ trợ load incremental qua Delta Lake
 
@@ -105,6 +89,5 @@ Tích hợp CI/CD & Unit Test cho pipeline
 Đinh Trọng Quỳnh
 💼 Data Engineer
 📧 dinhtrongquynh240@gmail.com
-🔗 GitHub: • LinkedIn
 
 ⭐ Nếu bạn thấy dự án hữu ích, hãy để lại một ⭐ trên GitHub nhé!
