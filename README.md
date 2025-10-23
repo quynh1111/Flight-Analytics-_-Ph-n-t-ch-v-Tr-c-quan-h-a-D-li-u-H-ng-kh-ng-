@@ -62,7 +62,6 @@ flight_analytics/
 - Chạy toàn bộ các cell để xử lý và ghi dữ liệu sang MongoDB
 
 ### **2️⃣ Chạy ứng dụng API & Dashboard trên Colab**
-```bash
 !pip install fastapi uvicorn nest_asyncio pyngrok pymongo jinja2
 !ngrok config add-authtoken <YOUR_NGROK_TOKEN>
 Mở file mainAPI.ipynb hoặc script tương ứng
@@ -74,9 +73,9 @@ Ngrok sẽ tạo một link public:
 🌍 Ứng dụng chạy tại: https://xxxx.ngrok-free.app
 
 Truy cập đường link này để mở Dashboard hoặc test API.
-```bash
+
 ---
-🔗 API Endpoints
+### 🔗 API Endpoints
 Phương thức	Endpoint	Mô tả
 GET	/api/airlines	Lấy danh sách tất cả hãng bay
 GET	/api/airlines/{code}	Lấy thông tin chi tiết cho một hãng
@@ -84,14 +83,14 @@ POST	/api/airlines	Thêm mới một hãng bay
 PUT	/api/airlines/{code}	Cập nhật dữ liệu hãng bay
 DELETE	/api/airlines/{code}	Xóa hãng bay khỏi cơ sở dữ liệu
 ---
-⚠️ Lưu ý & Khắc phục lỗi thường gặp
+### ⚠️ Lưu ý & Khắc phục lỗi thường gặp
 Lỗi	Nguyên nhân	Cách khắc phục
 ServerSelectionTimeoutError (MongoDB)	Sai URI hoặc chưa whitelist IP	Kiểm tra cấu hình MongoDB Atlas
 Ngrok tunnel expired	Token ngrok chưa add hoặc hết hạn	Chạy lại lệnh ngrok config add-authtoken
 ModuleNotFoundError	Thiếu thư viện	Cài đặt lại bằng requirements.txt
 Dữ liệu trống / null	Sai bước làm sạch dữ liệu	Kiểm tra lại notebook Databricks
 ---
-🚀 Hướng phát triển tiếp theo
+### 🚀 Hướng phát triển tiếp theo
 Hỗ trợ load incremental qua Delta Lake
 
 Dashboard nâng cao bằng Streamlit hoặc Dash
@@ -102,7 +101,7 @@ Thêm JWT Authentication cho API
 
 Tích hợp CI/CD & Unit Test cho pipeline
 ---
-👤 Tác giả
+### 👤 Tác giả
 Đinh Trọng Quỳnh
 💼 Data Engineer
 📧 dinhtrongquynh240@gmail.com
